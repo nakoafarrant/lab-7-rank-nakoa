@@ -24,3 +24,23 @@ kermit_hist <- ggplot(kermit, aes(x = Score.pre)) +
 
 ```
 
+
+ahh shh push it:
+
+
+Is there a significant difference in pre-talk hermit scores for females and males? 
+
+Unpaired: Mann-Whitney U (wilcox.test unpaired)
+```{r}
+mwu_kermit = kermit %>% 
+  wilcox.test(Score.pre ~ Gender, data = .)
+mwu_kermit
+```
+... there is no significant difference between gender in pre-talk hermit scores. 
+
+
+
+
+
+
+
