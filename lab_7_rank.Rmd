@@ -10,3 +10,17 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 Hi this is Nakoa and I am your creator!
+
+Collaborators (it's rachel and I'm a collaborator)
+
+```{r}
+
+library(tidyverse)
+kermit <- read_csv("kermit.csv")
+
+kermit_hist <- ggplot(kermit, aes(x = Score.pre)) +
+  geom_histogram() +
+  facet_wrap(~Gender)
+
+```
+
