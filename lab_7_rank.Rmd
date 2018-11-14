@@ -39,6 +39,21 @@ mwu_kermit
 ... there is no significant difference between gender in pre-talk hermit scores. 
 
 
+Nak attack is back:
+
+Is there a significant difference in Kermit ranks for pre-talk and post-talk scores (ignoring all other variables)?
+
+H0: No significant difference
+
+```{r}
+wsr_kermit <- wilcox.test(kermit$Score.pre, kermit$Score.post, paired = TRUE) 
+# only makes sense to consider data paired for pre and post opinion of same individual
+
+wsr_kermit
+```
+Retain the null hypothesis that there is no significant difference in Kermit rankings before and after his talk (statistical summary...)
+
+
 
 
 
